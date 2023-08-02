@@ -49,7 +49,7 @@ public class DataTypes {
     }
     
     
-//   Soma de int
+//   Soma de int.
     
     public static int intSum(int num1, int num2) {
     	return num1 + num2;
