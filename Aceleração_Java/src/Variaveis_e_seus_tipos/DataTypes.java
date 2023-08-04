@@ -15,6 +15,8 @@ public class DataTypes {
 	static double varDouble = 2.356; // double inicializado naturalmente
     static double doubleRecebendoFloat = 1.409F; // double aceitando número float
     static double doubleRecebendoLong = 12930L; // double aceitando número long
+    static char char1 = 'a'; //Precisa ser aspas simples pra ser considerado char
+    static char char2 = 'A';
 	
 	
     public static void main(String[] args) {
@@ -33,6 +35,8 @@ public class DataTypes {
         		DataTypes.typeDouble(doubleRecebendoLong),
         		DataTypes.typeBoolean(false),
         		DataTypes.typeBoolean(true),
+        		DataTypes.typeCharComparison(char1, char2),
+        		DataTypes.typeCharComparison('c', 'c'),
         };
         DataTypes.loopPrint(newArr);
         DataTypes.inlineSum();
@@ -95,6 +99,13 @@ public class DataTypes {
     		return "Hoje é sexta";
     	}
     	return "Hoje não é sexta";
+    }
+    
+//    char
+//    char é diferente de String
+    
+    public static String typeCharComparison(char char1, char char2) {
+    	return char1 + " == " + char2 + " ? " + (char1 == char2);
     }
     
 //   Soma de int.
