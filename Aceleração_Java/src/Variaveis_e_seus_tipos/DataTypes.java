@@ -31,6 +31,8 @@ public class DataTypes {
         		DataTypes.typeDouble(varDouble),
         		DataTypes.typeDouble(doubleRecebendoFloat),
         		DataTypes.typeDouble(doubleRecebendoLong),
+        		DataTypes.typeBoolean(false),
+        		DataTypes.typeBoolean(true),
         };
         DataTypes.loopPrint(newArr);
         DataTypes.inlineSum();
@@ -84,6 +86,15 @@ public class DataTypes {
     
     public static String typeDouble(double number) {
     	return "Double number type " + number;
+    }
+    
+//    Boolean
+    
+    public static String typeBoolean(boolean bool) {
+    	if(bool) {
+    		return "Hoje é sexta";
+    	}
+    	return "Hoje não é sexta";
     }
     
 //   Soma de int.
