@@ -19,9 +19,10 @@ public class DataTypes {
         		DataTypes.typeShort(pShort2),
         		DataTypes.typeInt(pInt),
         		DataTypes.intSum(pInt2, pInt3),
-        		DataTypes.typeLong(pLong)
+        		DataTypes.typeLong(pLong),
         };
         DataTypes.loopPrint(newArr);
+        DataTypes.inlineSum();
     }
 
 	public static void loopPrint(Object[] args) {
@@ -53,6 +54,14 @@ public class DataTypes {
     
     public static int intSum(int num1, int num2) {
     	return num1 + num2;
+    }
+    
+    public static void inlineSum() {
+    	int numeroInteiro = 20;
+    	int a = 4, b = 6, soma;
+    	soma = a + b;
+    	System.out.println("Numero Inteiro " + numeroInteiro);
+    	System.out.println("Somando " + soma);
     }
     
     
