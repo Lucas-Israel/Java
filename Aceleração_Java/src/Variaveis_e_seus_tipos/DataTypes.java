@@ -24,6 +24,7 @@ public class DataTypes {
         		DataTypes.typeLong(pLong),
         		DataTypes.typeFloat(pFloat1),
         		DataTypes.typeFloat(pFloat2),
+        		DataTypes.floatSum(pFloat1, pFloat2),
         };
         DataTypes.loopPrint(newArr);
         DataTypes.inlineSum();
@@ -62,6 +63,10 @@ public class DataTypes {
     }
     
 //    float
+//    Na inicialização de variáveis do tipo float, é necessário adicionar a letra f no final do número. 
+//    O motivo é que a precisão entre float e double são diferentes. Se não inserirmos a letra f, 
+//    o Java entenderá que você está tentando atribuir um valor do tipo double a uma variável do tipo float.
+//    float aceita os mesmos valores do byte, short e int, além de números de ponto flutuante dentro do range float.
     
     public static String typeFloat(float number) {
     	return "Float number " + number;
@@ -71,6 +76,12 @@ public class DataTypes {
 //   Soma de int.
     
     public static int intSum(int num1, int num2) {
+    	return num1 + num2;
+    }
+    
+//    Soma de float
+    
+    public static float floatSum(float num1, float num2) {
     	return num1 + num2;
     }
     
