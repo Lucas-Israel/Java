@@ -12,6 +12,9 @@ public class DataTypes {
 	static long pLong = 9_223_372_036_854_775_807L;
 	static float pFloat1 = -101.23f;
 	static float pFloat2 = 2.356f;
+	static double varDouble = 2.356; // double inicializado naturalmente
+    static double doubleRecebendoFloat = 1.409F; // double aceitando número float
+    static double doubleRecebendoLong = 12930L; // double aceitando número long
 	
 	
     public static void main(String[] args) {
@@ -25,6 +28,9 @@ public class DataTypes {
         		DataTypes.typeFloat(pFloat1),
         		DataTypes.typeFloat(pFloat2),
         		DataTypes.floatSum(pFloat1, pFloat2),
+        		DataTypes.typeDouble(varDouble),
+        		DataTypes.typeDouble(doubleRecebendoFloat),
+        		DataTypes.typeDouble(doubleRecebendoLong),
         };
         DataTypes.loopPrint(newArr);
         DataTypes.inlineSum();
@@ -72,6 +78,13 @@ public class DataTypes {
     	return "Float number " + number;
     }
     
+//    Double
+//    O double é um tipo primitivo numérico de range -4,9E-324 até 1,7976931348623157E308. 
+//    Ele é o outro tipo primitivo para utilização de números de ponto flutuante, similar ao float, porém com um range maior.
+    
+    public static String typeDouble(double number) {
+    	return "Double number type " + number;
+    }
     
 //   Soma de int.
     
