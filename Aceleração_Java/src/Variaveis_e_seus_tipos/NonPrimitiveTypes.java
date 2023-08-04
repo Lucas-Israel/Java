@@ -24,7 +24,7 @@ public class NonPrimitiveTypes {
 		}
 	}
 	
-//	stringBuilder
+//	stringBuilder, é mais eficiente que concatenar com +
 	
 	public static String stringBuilder(String... args) {
 		
