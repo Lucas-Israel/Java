@@ -103,6 +103,7 @@ public class DataTypes {
     
 //    char
 //    char é diferente de String
+//    char, ele armazena apenas um caractere por variável.
     
     public static String typeCharComparison(char char1, char char2) {
     	return char1 + " == " + char2 + " ? " + (char1 == char2);
