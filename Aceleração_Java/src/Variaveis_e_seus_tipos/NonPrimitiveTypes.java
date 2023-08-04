@@ -14,6 +14,7 @@ public class NonPrimitiveTypes {
 		};
 		
 		NonPrimitiveTypes.printer(newArr);
+		NonPrimitiveTypes.arrays(1.00, 2.00, 3.00, 4.44, 5.55, 6.66);
 	}
 	
 //	printer
@@ -35,6 +36,19 @@ public class NonPrimitiveTypes {
 		}
 		
 		return stringBuilder.toString();
+	}
+	
+//	arrays
+	
+	public static void arrays(double ... args) {
+		double[] newArr = new double[args.length];
+		int counter = 0;
+		
+		for(double arg : args) {
+			newArr[counter] = arg;
+			System.out.println(newArr[counter]);
+			counter += 1;
+		}
 	}
 	
 }
