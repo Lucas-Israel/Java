@@ -53,7 +53,7 @@ class UsandoScanner {
         String input1 = scanner.next();
         scanner.close();
     
-	float gasolina = Float.parseFloat(input1);
+        float gasolina = Float.parseFloat(input1);
 
         float resultado = gasolina + gasolina;
         System.out.println("Ano que vem o litro da gasolina vai custar: " + resultado);
