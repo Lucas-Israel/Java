@@ -7,7 +7,7 @@ import java.util.Collections;
 /**
  * Classe mostrando o funcionamento de uma lista.
  */
-public class List {
+public class ListExemplo {
 
   /**
    * main para rodar os testes.
